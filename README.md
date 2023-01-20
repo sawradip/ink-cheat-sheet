@@ -1,27 +1,23 @@
 # ink Cheat Sheet
 
 
-` // ` - Single Line  Comment - The compiler ignores the line, if the  line  is followed by this.
+| Symbol | Used For | Description |
+| ------ | -------- | ----------- |
+|` // ` | Single Line  Comment | The compiler ignores the line, if the  line  is followed by this. |
+| `/* ... */` | Multi Line Comment | The compiler ignores everything in between. |
+|` * ` | Choice | Lists choices, a choice is removed once it is selected in previous iterations. |
+|` + ` | Sticky Choice | Lists choices, choices are  not  removed  on whether they were selected previously.|
+|` === ... === ` |  Knot Defnition | A knot is  defined with this.|
+|` -> ` | Knot Divert | With this, the story flow is diverted from one knot to another knot.|
+|` = ` | Stitch | Sub-story(Sub-knot) inside the knot.|
 
-`/* ... */` - Multi Line Comment - The compiler ignores everything in between. 
+|` <> ` | Glue | Undo's the default line break.|
 
-` * ` - Choice - Lists choices, a choice is removed once it is selected in previous iterations.
+|` - ` | Gather | Works as joining points in between choices, binds thestory   flow back together. |
 
-` + ` - Sticky Choice - Lists choices, choices are  not  removed  on whether they were selected previously.
+|` { ... } ` | Conditional Choice | A knot_name or stitch_name in betweeen this, translates to the read count ( number of times the  player has seen this option ).|
 
-` === ... === ` -  Knot Defnition - A knot is  defined with this.
-
-` -> ` - Knot Divert - With this, the story flow is diverted from one knot to another knot.
-
-` = ` - Stitch - Sub-story(Sub-knot) inside the knot.
-
-` <> ` - Glue - Undo's the default line break.
-
-` - ` - Gather - Works as joining points in between choices, binds thestory   flow back together.
-
-` { ... } ` - Conditional Choice - A knot_name or stitch_name in betweeen this, translates to the read count ( number of times the  player has seen this option ).
-
-` { ...|...|... } ` - Default Sequence - As the players sees the choice sequence N-th time, the N-th option appears. When N is greater than number of options, the final  option appears repeatedly.
+|` { ...|...|... } ` | Default Sequence | As the players sees the choice sequence N-th time, the N-th option appears. When N is greater than number of options, the final  option appears repeatedly.
 
 ` { & ...|...|... } ` - Cycles Sequence - Like a default sequence. When N is greater than number of options, the options cycle repeatedly.
 
