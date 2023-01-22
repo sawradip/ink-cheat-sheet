@@ -35,4 +35,4 @@ If you're new to Ink, it is highly recommended that you start by reading the off
 | Function | Description | Example |
 | ------ | -------- | ----------- |
 | `CHOICE_COUNT()` | returns the number of options created so far in the current choice list | # |
-| `TURNS()` | returns the number of game turns since the game began. | 
+| `TURNS()` | returns the number of game turns since the game began. Increases any time a choice is selected. | 
