@@ -36,3 +36,10 @@ If you're new to Ink, it is highly recommended that you start by reading the off
 | ------ | -------- | ----------- |
 | `CHOICE_COUNT()` | returns the number of options created so far in the current choice list | # |
 | `TURNS()` | returns the number of game turns since the game began. Increases any time a choice is selected. | 
+| `MYLIST(n)` | n-th 'all-the' list element from `MYLIST` list |
+| `LIST_VALUE(...)` | Returns 1-based index of `...` list element from 'all-the' list elments|
+| `LIST_COUNT(MYLIST)` | Returns number of 'in-the' list elements from `MYLIST` list|
+| `LIST_MIN(MYLIST)` | Returns first 'in-the' list element from `MYLIST` list|
+| `LIST_MAX(MYLIST)` | Returns last 'in-the' list element from `MYLIST` list|
+| `LIST_RANDOM(MYLIST)` | Returns a rendomly  selected 'in-the' list element from `MYLIST` list|
+
