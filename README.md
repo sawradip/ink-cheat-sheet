@@ -8,9 +8,9 @@ If you're new to Ink, it is highly recommended that you start by reading the off
 
 ## Ink Symbol Reference Table
 
-| Symbol | Used For | Description |
-| ------ | -------- | ----------- |
-|` // ` | Single Line  Comment | The compiler ignores the line, if the  line  is followed by this. |
+| Symbol | Used For | Description | Example |
+| ------ | -------- | ----------- | ------- |
+|` // ` | Single Line  Comment | The compiler ignores the line, if the  line  is followed by this. | # |
 | `/* ... */` | Multi Line Comment | The compiler ignores everything in between. |
 |` * ` | Choice | Lists choices, a choice is removed once it is selected in previous iterations. |
 |` + ` | Sticky Choice | Lists choices, choices are  not  removed  on whether they were selected previously.|
@@ -34,4 +34,5 @@ If you're new to Ink, it is highly recommended that you start by reading the off
 
 | Function | Description | Example |
 | ------ | -------- | ----------- |
-| `CHOICE_COUNT()` | Single Line  Comment | # |
+| `CHOICE_COUNT()` | returns the number of options created so far in the current choice list | # |
+| `TURNS()` | returns the number of game turns since the game began. | 
