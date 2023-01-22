@@ -30,16 +30,32 @@ If you're new to Ink, it is highly recommended that you start by reading the off
 |` ...[...]... ` | Mixing choice & Output | What's before is printed in both choice and output; what's inside only in choice; and what's after, only in output.|
 |` - (...) ` | Labelling | This will label a Choice List or a individual choice, which can later be used as a  condition, that if the player has faced that before.|
 
+
+## Ink List Operations Reference Table
+
+| Operation |  Description | Example |
+| ------ |  ----------- | ------- |
+
+| `MYLIST`| Returns every 'in-the' list element separated by comma |#|
+| `MYLIST(n)` | Returns n-th 'all-the' list element from `MYLIST` list |
+| `MYLIST ? (A, B)` | Returns True if `MYLIST` contains `A` and `B` |
+| `MYLIST !? (A, B)` | Returns True if `MYLIST` does not contains `A` and `B` |
+| `MYLIST == (A, B)` | Returns True if `MYLIST` contains only `A` and `B` |
+| `MYLIST != (A, B)` | Returns True if `MYLIST` does not contain only `A` and `B` |
+| `MYLIST1 ^ MYLIST2` | Returns a list with intersection of 'in-the' list elemnets |
+| `LIST_VALUE(...)` | Returns 1-based index of the list element `...` from 'all-the' list elments|
+| `LIST_ALL(MYLIST)`| Returns every 'all-the' list element separated by comma |
+| `LIST_COUNT(MYLIST)` | Returns number of 'in-the' list elements from `MYLIST` list|
+| `LIST_MIN(MYLIST)` | Returns first 'in-the' list element from `MYLIST` list|
+| `LIST_MAX(MYLIST)` | Returns last 'in-the' list element from `MYLIST` list|
+| `LIST_RANDOM(MYLIST)` | Returns a rendomly  selected 'in-the' list element from `MYLIST` list|
+
+
 ## Ink Built-in Game Query Functions Reference Table
 
 | Function | Description | Example |
 | ------ | -------- | ----------- |
 | `CHOICE_COUNT()` | returns the number of options created so far in the current choice list | # |
 | `TURNS()` | returns the number of game turns since the game began. Increases any time a choice is selected. | 
-| `MYLIST(n)` | n-th 'all-the' list element from `MYLIST` list |
-| `LIST_VALUE(...)` | Returns 1-based index of `...` list element from 'all-the' list elments|
-| `LIST_COUNT(MYLIST)` | Returns number of 'in-the' list elements from `MYLIST` list|
-| `LIST_MIN(MYLIST)` | Returns first 'in-the' list element from `MYLIST` list|
-| `LIST_MAX(MYLIST)` | Returns last 'in-the' list element from `MYLIST` list|
-| `LIST_RANDOM(MYLIST)` | Returns a rendomly  selected 'in-the' list element from `MYLIST` list|
+
 
