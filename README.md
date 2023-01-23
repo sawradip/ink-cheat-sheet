@@ -35,7 +35,6 @@ If you're new to Ink, it is highly recommended that you start by reading the off
 
 | Operation |  Description | Example |
 | ------ |  ----------- | ------- |
-
 | `MYLIST`| Returns every 'in-the' list element separated by comma |#|
 | `MYLIST(n)` | Returns n-th 'all-the' list element from `MYLIST` list |
 | `MYLIST ? (A, B)` | Returns True if `MYLIST` contains `A` and `B` |
@@ -43,12 +42,16 @@ If you're new to Ink, it is highly recommended that you start by reading the off
 | `MYLIST == (A, B)` | Returns True if `MYLIST` contains only `A` and `B` |
 | `MYLIST != (A, B)` | Returns True if `MYLIST` does not contain only `A` and `B` |
 | `MYLIST1 ^ MYLIST2` | Returns a list with intersection of 'in-the' list elemnets |
-| `LIST_VALUE(...)` | Returns 1-based index of the list element `...` from 'all-the' list elments|
+| `MYLIST1 > MYLIST2` | Returns True if the smallest value in `MYLIST1` is bigger than the largest values in `MYLIST2`|
+| `MYLIST1 >= MYLIST2` | Returns True if the smallest value in `MYLIST1` is at least the smallest value in `MYLIST2`, and the largest value in `MYLIST1` is at least the largest value in `MYLIST2` |
 | `LIST_ALL(MYLIST)`| Returns every 'all-the' list element separated by comma |
 | `LIST_COUNT(MYLIST)` | Returns number of 'in-the' list elements from `MYLIST` list|
+|  `LIST_INVERT(MYLIST)` | Return a new list  with 'in-the' list elements as non-'in-the' list elements and vice-versa|
 | `LIST_MIN(MYLIST)` | Returns first 'in-the' list element from `MYLIST` list|
 | `LIST_MAX(MYLIST)` | Returns last 'in-the' list element from `MYLIST` list|
 | `LIST_RANDOM(MYLIST)` | Returns a rendomly  selected 'in-the' list element from `MYLIST` list|
+| `LIST_RANGE(MYLIST, min, max)` | Returns a slice of 'in-the' elements of `MYLIST` from `min` to '`max` element(inclusive) | 
+| `LIST_VALUE(...)` | Returns 1-based index of the list element `...` from 'all-the' list elments|
 
 
 ## Ink Built-in Game Query Functions Reference Table
